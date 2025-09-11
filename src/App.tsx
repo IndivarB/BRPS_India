@@ -7,12 +7,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Index from "./pages/Index";
-import About from "./pages/About";
+// import About from "./pages/About";
 import Processing from "./pages/Processing";
 import Products from "./pages/Products";
 import Orders from "./pages/Orders";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import About from "./pages/About";
 
 const queryClient = new QueryClient();
 
@@ -26,7 +27,7 @@ const App = () => (
         <main className="min-h-screen">
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/about" element={<About />} />
+            <Route path="about" element={<About />} />
             <Route path="/processing" element={<Processing />} />
             <Route path="/products" element={<Products />} />
             <Route path="/orders" element={<Orders />} />
