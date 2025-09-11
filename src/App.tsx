@@ -26,7 +26,7 @@ const App = () => (
         <main className="min-h-screen">
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/about" element={<About />} />
+            <Route path="about" element={<About />} />
             <Route path="/processing" element={<Processing />} />
             <Route path="/products" element={<Products />} />
             <Route path="/orders" element={<Orders />} />
